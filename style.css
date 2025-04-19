@@ -59,3 +59,213 @@ img.logo-web {
   background-color: black;
   color: white;
 }
+
+.profes-container {
+    display: flex
+;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card .title {
+    color: #777;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.inicio-section {
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.inicio-content h2 {
+  font-size: 2.5em;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.inicio-content .highlight {
+  color: #5c6bc0;
+  font-weight: bold;
+}
+
+.inicio-content p {
+  font-size: 1.1em;
+  color: #444;
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+.inicio-content h3 {
+  margin-top: 30px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.clases-lista {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.clases-lista li {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+.btn-empezar {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3f51b5;
+}
+
+.btn-empezar:hover {
+  background-color: #3f51b5;
+}
+
+.aboutus-section {
+  padding: 80px 20px;
+  background-color: #fefefe;
+  color: #333;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutus-content h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #5c6bc0;
+}
+
+.aboutus-content p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 15px auto;
+}
+
+.mision-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.mision-vision .card {
+  background: #f3f6fd;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.mision-vision .card h3 {
+  color: #3f51b5;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.valores h3 {
+  font-size: 1.5em;
+  margin-top: 40px;
+  color: #3f51b5;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.valores li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Responsive: dos columnas en pantallas grandes */
+@media (min-width: 768px) {
+  .mision-vision {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .mision-vision .card {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .instr-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+#instrumentos{
+  height: 100vh;
+}

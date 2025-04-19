@@ -23,9 +23,25 @@
     </header>
     <h1>Toquen el DOM 🎹</h1>
     <main class="home-container">
-        <section id="inicio">
-            <h2>Seccion de inicio</h2>
-        </section>
+            <section id="inicio" class="inicio-section">
+  <div class="inicio-content">
+    <h2>Bienvenidos a <span class="highlight">Toquen el DOM</span> 🎶</h2>
+    <p>Somos una escuela de música moderna con un enfoque creativo, accesible y personalizado. Aquí no solo enseñamos notas y acordes: ¡despertamos tu pasión por la música!</p>
+    <p>Nuestros cursos están pensados para todas las edades y niveles, desde principiantes curiosos hasta músicos en formación profesional. Aprende a tu ritmo, acompañado de profesores apasionados y con experiencia.</p>
+    <h3>🎵 ¿Qué puedes aprender con nosotros?</h3>
+    <ul class="clases-lista">
+      <li>🎹 Piano clásico y moderno, Marimba</li>
+      <li>🥁 Batería y percusión</li>
+      <li>🎸 Guitarra acústica y eléctrica</li>
+      <li>🎤 Canto y técnica vocal</li>
+      <li>🎼 Violín y lenguaje musical</li>
+      <li>🧠 Armonía, improvisación y composición</li>
+    </ul>
+    <p>Explora, siente y toca la música con nosotros. Tu viaje musical empieza hoy.</p>
+    <a href="#instrumentos" class="btn-empezar">Descubre tu instrumento</a>
+  </div>
+</section>
+
         <section id="instrumentos">
             <h2>Selecciona el instrumento</h2>
             <div class="instr-container">
@@ -42,13 +58,103 @@
                 </div>
             </div>
         </section>
-        <section id="aboutus">
             <h2>Sobre la escuela</h2>
+            <section id="aboutus" class="aboutus-section fade-in">
+  <div class="aboutus-content">
+    <h2><i class="fas fa-school"></i> Sobre Nuestra Escuela</h2>
+    <p>
+      En <strong>Toquen el DOM</strong> creemos que la música es para todos. Fundada por músicos y docentes apasionados,
+      nuestra escuela ofrece un espacio inclusivo y moderno donde puedes explorar, aprender y crecer musicalmente,
+      sin importar tu nivel.
+    </p>
+
+    <p>
+      Combinamos la enseñanza tradicional con herramientas tecnológicas para que cada clase sea interactiva, divertida y personalizada.
+      Nuestro equipo docente está formado por músicos profesionales, con experiencia en escenarios reales y en el aula.
+    </p>
+
+    <div class="mision-vision">
+      <div class="card">
+        <h3><i class="fas fa-bullseye"></i> Misión</h3>
+        <p>Despertar la creatividad musical en cada estudiante, promoviendo el aprendizaje activo, la expresión personal y la conexión con la música.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-eye"></i> Visión</h3>
+        <p>Ser un referente en educación musical innovadora y accesible, donde los alumnos no solo aprenden, sino que se inspiran.</p>
+      </div>
+    </div>
+
+    <div class="valores">
+      <h3><i class="fas fa-star"></i> Nuestros Valores</h3>
+      <ul>
+        <li><i class="fas fa-heart"></i> Pasión por enseñar y aprender</li>
+        <li><i class="fas fa-users"></i> Comunidad y colaboración</li>
+        <li><i class="fas fa-lightbulb"></i> Creatividad e innovación</li>
+        <li><i class="fas fa-music"></i> Amor por la música en todas sus formas</li>
+      </ul>
+    </div>
+  </div>
+</section>
         </section>
-        <section id="profesores"></section>
+       
+        <section id="profesores">
+    <h2>Nuestros Profesores</h2>
+        <div class="profes-container">
+            <div class="card">
+                <img src="/assets/img/2149613748 (1).jpg" alt="Miranda- piano teacher" class="card-img">
+                    <h3>Miranda Martínez</h3>
+            <p class="title">Profesora de Piano</p>
+            <p>Especialista en piano clásico y moderno. Más de 10 años de experiencia enseñando.</p>
+        </div>
+
+        <div class="card">
+                <img src="/assets/img/143511.jpg" alt="Xabi-guitar-teacher" class="card-img">
+                    <h3>Xabi López</h3>
+                <p class="title">Profesor de Guitarra</p>
+                <p>Guitarrista, compositor y experto en armonía moderna.</p>
+        </div>
+
+        <div class="card">
+            <img src="/assets/img/2148006500.jpg" alt="Atenea violin-teacher" class="card-img">
+            <h3>Atenea Mercado</h3>
+            <p class="title">Profesora de Violín</p>
+            <p>Nació en nuestra escuela y comparte su pasión desde hace 4 años.</p>
+        </div>
+
+        <div class="card">
+            <img src="/assets/img/2149215533.jpg" alt="Julien-voice-teacher" class="card-img">
+            <h3>Julien Montecristo</h3>
+            <p class="title">Profesor de Canto</p>
+            <p>Vocalista y compositor con más de 8 años de experiencia.</p>
+        </div>
+    </div>
+</section>
+
+
+
+        
         <section id="galeria"></section>
         <section id="faq"></section>
-        <section id="contacto"></section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <label for="nombre">Nombre:</label>
+                 <input type="text"autocomplete id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+            <input type="email"autocomplete id="email" name="email" required>
+             <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"autocomplete name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <h3>Información de contacto</h3>
+                <p>Email: info@toqueneldom.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Dirección: Calle de la Música, 123, Valencia</p>
+                <p>Horario: Lunes a Viernes, 10:00 - 20:00</p>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
