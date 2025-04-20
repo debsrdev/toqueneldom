@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marimba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/tone@next"></script>
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img src="/assets/img/logo-negra.png" alt="" srcset="" class="logo-web">
+            <div class="lineas-menu" onclick="toggleMenu(this)">
+                <div class="linea1"></div>
+                <div class="linea2"></div>
+                <div class="linea3"></div>
+            </div>
+            <nav id="menu" class="nav">
+                <a href="/index.html">Home</a>
+                <a class="menu-active" href="#instrument">Instrumento</a>
+                <a href="#doc">Documentación</a>
+                <a href="#videos">Videotutoriales</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Tocar la marimba</h1>
+    <main>
+        <section id="instrument">
+            <div class="marimba">
+                <div class="mocha-keys">
+                    <!-- octava 3 -->
+                    <div class="mkey mocha-key" data-note="C3"><p>z</p><p>C3</p></div>
+                    <div class="mkey mocha-key" data-note="D3"><p>x</p><p>D3</p></div>
+                    <div class="mkey mocha-key" data-note="E3"><p>c</p><p>E3</p></div>
+                    <div class="mkey mocha-key" data-note="F3"><p>v</p><p>F3</p></div>
+                    <div class="mkey mocha-key" data-note="G3"><p>b</p><p>G3</p></div>
+                    <div class="mkey mocha-key" data-note="A3"><p>n</p><p>A3</p></div>
+                    <div class="mkey mocha-key" data-note="B3"><p>m</p><p>B3</p></div>
+                    <!-- octava 4 -->
+                    <div class="mkey mocha-key" data-note="C4"><p>r</p><p>C4</p></div>
+                    <div class="mkey mocha-key" data-note="D4"><p>t</p><p>D4</p></div>
+                    <div class="mkey mocha-key" data-note="E4"><p>y</p><p>E4</p></div>
+                    <div class="mkey mocha-key" data-note="F4"><p>u</p><p>F4</p></div>
+                    <div class="mkey mocha-key" data-note="G4"><p>i</p><p>G4</p></div>
+                    <div class="mkey mocha-key" data-note="A4"><p>o</p><p>A4</p></div>
+                    <div class="mkey mocha-key" data-note="B4"><p>p</p><p>B4</p></div>
+                </div>
+                <div class="brown-keys">
+                    <!-- octava 3 -->
+                    <div class="mkey brown-key" data-note="C#3"><p>s</p><p>C#3</p></div>
+                    <div class="mkey brown-key" data-note="D#3"><p>d</p><p>D#3</p></div>
+                    <div class="space"></div>
+                    <div class="mkey brown-key" data-note="F#3"><p>g</p><p>F#3</p></div>
+                    <div class="mkey brown-key" data-note="G#3"><p>h</p><p>G#3</p></div>
+                    <div class="mkey brown-key" data-note="A#3"><p>j</p><p>A#3</p></div>
+                    <div class="space"></div>
+                    <!-- octava 4 -->
+                    <div class="mkey brown-key" data-note="C#4"><p>5</p><p>C#4</p></div>
+                    <div class="mkey brown-key" data-note="D#4"><p>6</p><p>D#4</p></div>
+                    <div class="space"></div>
+                    <div class="mkey brown-key" data-note="F#4"><p>8</p><p>F#4</p></div>
+                    <div class="mkey brown-key" data-note="G#4"><p>9</p><p>G#4</p></div>
+                    <div class="mkey brown-key" data-note="A#4"><p>0</p><p>A#4</p></div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scriptmarimba.js"></script>
+</body>
+</html>

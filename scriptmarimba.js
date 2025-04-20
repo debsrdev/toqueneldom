@@ -37,7 +37,7 @@ const sampler = new Tone.Sampler({
     B4: "B4.mp3",
   },
   release: 1, // para que no corte el audio de golpe, tenga una latencia
-  baseUrl: "assets/samples/piano/",
+  baseUrl: "assets/samples/marimba/",
 }).toDestination(); // conecta a la salida de audio de nuestro navegador
 
 // activamos Tone.js solo cuando se toca una tecla por primera vez
@@ -63,7 +63,7 @@ function stopNote(note) {
 // conectamos piano con teclado del ordenador y ratón:
 // 1. ratón
 // seleccionamos todas las teclas del piano
-document.querySelectorAll(".key").forEach((key) => {
+document.querySelectorAll(".mkey").forEach((key) => {
   //   console.log(key);
   const note = key.dataset.note; // del elemento key entramos al dataset y guardamos el valor de la nota (ejemplo C3)
   //   console.log(note);

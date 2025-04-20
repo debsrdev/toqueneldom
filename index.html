@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toquen el DOM</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
             <img src="/assets/img/logo-negra.png" alt="" srcset="" class="logo-web">
-            <nav class="nav">
-                <a href="#inicio">Inicio</a>
+            <div class="lineas-menu" onclick="toggleMenu(this)">
+                <div class="linea1"></div>
+                <div class="linea2"></div>
+                <div class="linea3"></div>
+            </div>
+            <nav id="menu" class="nav">
+                <a class="menu-active" href="#inicio">Inicio</a>
                 <a href="#instrumentos">Practica tu mismo</a>
-                <a href="#aboutus">Sobre la escuela</a>
+                <a href="#aboutus">Sobre nosotros</a>
                 <a href="#profesores">Profesores</a>
                 <a href="#galeria">Galería</a>
                 <a href="#faq">FAQ</a>
@@ -43,7 +52,7 @@
 </section>
 
         <section id="instrumentos">
-            <h2>Selecciona el instrumento</h2>
+            <h2 class="title playfair-display-400">Selecciona el instrumento</h2>
             <div class="instr-container">
                 <div class="instr instr-piano">
                     <a href="/piano.html">
@@ -51,13 +60,18 @@
                     </a>
                 </div>
                 <div class="instr instr-marimba">
-                    <img src="/assets/img/marimba.png" alt="" srcset="">
+                    <a href="/marimba.html">
+                        <img src="/assets/img/marimba.png" alt="" srcset="">
+                    </a>
                 </div>
                 <div class="instr instr-bateria">
-                    <img src="/assets/img/bateria.png" alt="" srcset="">
+                    <a href="/bateria.html">
+                        <img src="/assets/img/bateria.png" alt="" srcset="">
+                    </a>
                 </div>
             </div>
         </section>
+piano--Alex
             <h2>Sobre la escuela</h2>
             <section id="aboutus" class="aboutus-section fade-in">
   <div class="aboutus-content">
@@ -95,6 +109,10 @@
     </div>
   </div>
 </section>
+=======
+        <section id="aboutus">
+            <h2 class="title playfair-display-400">Sobre la escuela</h2>
+main
         </section>
        
         <section id="profesores">
@@ -134,6 +152,7 @@
 
         
         <section id="galeria"></section>
+ piano--Alex
         <section id="faq"></section>
         
         <section id="contacto">
@@ -155,6 +174,53 @@
                 <p>Horario: Lunes a Viernes, 10:00 - 20:00</p>
             </div>
         </section>
+
+        <div class="faq-container">
+        <section id="faq">
+            <h2 class="title playfair-display-400">Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Qué tipos de instrumentos enseña la escuela?</summary>
+                    <p>Ofrecemos clases de piano, marimba y bateria. También contamos con talleres especiales para iniciarse 
+                    en la música y exploración de diferentes estilos musicales.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Necesito experiencia previa para inscribirme?</summary>
+                    <p>¡No, para nada! Tenemos clases para todos los niveles, desde principiantes hasta avanzados.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Qué horarios están disponibles?</summary>
+                    <p>Nuestros horarios son flexibles y diseñados para adaptarse a tu rutina.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Qué metodo de pago aceptan?</summary>
+                    <p>Aceptamos pagos con tarjeta de crédito, transferencia bancaria y PayPal. También ofrecemos planes de pago para cursos más largos.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Ofrecen clases individuales o grupales?</summary>
+                    <p>Ambas modalidades están disponibles. Puedes optar por clases personalizadas individuales o participar en clases grupales para aprender 
+                    junto con otros estudiantes.</p>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary class="faq-question">¿Cómo puedo inscribirme?</summary>
+                    <p>Puedes inscribirte llamandonos o visitándonos en nuestra sede. Proximamente tendremos un formulario en línea para que puedas inscribirte
+                    directamente en nuestra página web y reserves tu primera clase</p>
+                </details>
+            </div>
+        </div>
+        </section>
+        <section id="contacto"></section>
+main
     </main>
     <script src="script.js"></script>
 </body>
