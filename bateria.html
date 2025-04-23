@@ -12,7 +12,9 @@
 <body>
   <header>
     <div class="nav-bar">
-      <img src="/assets/img/logo-negra.png" alt="" srcset="" class="logo-web">
+      <a href="/index.html">
+        <img src="/assets/img/logo-negra.png" alt="" srcset="" class="logo-web">
+      </a>
       <div class="lineas-menu" onclick="toggleMenu(this)">
         <div class="linea1"></div>
         <div class="linea2"></div>
@@ -21,14 +23,64 @@
       <nav id="menu" class="nav">
         <a href="/index.html">Home</a>
         <a class="menu-active" href="#instrument">Instrumento</a>
-        <a href="/assets/documentacionpdf/Documentacion_Bateria_Interactiva.pdf" target="_blank">Documentación</a>
-        <a href="https://www.youtube.com/watch?v=cVSDoFIl0KE&list=PL023DB6767A35CF55&index=4"
-          target="_blank">Videotutoriales</a>
-
+        <a href="#cambiar-instrumentos">Cambiar de instrumento</a>
+        <a href="#doc">Documentación</a>
+        <a href="#video">Videotutoriales</a>
     </div>
     </header>
   <h1>Toca la bateria</h1>
-  <main>
+  <main>  <!-- <div class="bateria">
+    <img src="/assets/img/bateria_instrumento.png" alt="">
+    <div class="grid-overlay">
+      <div class="hitbox" data-drum="crash" style="grid-column: 1 / 3; grid-row: 1 / 2;"></div>
+      <div class="hitbox" data-drum="high-tom" style="grid-column: 3 / 4; grid-row: 1 / 2;"></div>
+      <div class="hitbox" data-drum="ride" style="grid-column: 4 / 6; grid-row: 1 / 2;"></div>
+      
+      <div class="hitbox" data-drum="hi-hat" style="grid-column: 1 / 2; grid-row: 2 / 3;"></div>
+      <div class="hitbox" data-drum="snare" style="grid-column: 2 / 3; grid-row: 2 / 3;"></div>
+      <div class="hitbox" data-drum="mid-tom" style="grid-column: 3 / 4; grid-row: 2 / 3;"></div>
+      <div class="hitbox" data-drum="floor-tom" style="grid-column: 4 / 5; grid-row: 2 / 3;"></div>
+      <div class="hitbox" data-drum="stand" style="grid-column: 5 / 6; grid-row: 2 / 3;"></div>
+
+      <div class="hitbox" data-drum="pedal" style="grid-column: 1 / 2; grid-row: 3 / 4;"></div>
+      <div class="hitbox" data-drum="snare-stand" style="grid-column: 2 / 3; grid-row: 3 / 4;"></div>
+      <div class="hitbox" data-drum="kick" style="grid-column: 3 / 4; grid-row: 3 / 4;"></div>
+      <div class="hitbox" data-drum="floor-tom-2" style="grid-column: 4 / 5; grid-row: 3 / 4;"></div>
+      <div class="hitbox" data-drum="stand-2" style="grid-column: 5 / 6; grid-row: 3 / 4;"></div>
+
+      <div class="hitbox" data-drum="pedal-2" style="grid-column: 1 / 2; grid-row: 4 / 5;"></div>
+      <div class="hitbox" data-drum="stand-3" style="grid-column: 2 / 3; grid-row: 4 / 5;"></div>
+      <div class="hitbox" data-drum="kick-2" style="grid-column: 3 / 4; grid-row: 4 / 5;"></div>
+      <div class="hitbox" data-drum="floor-tom-3" style="grid-column: 4 / 5; grid-row: 4 / 5;"></div>
+      <div class="hitbox" data-drum="stand-4" style="grid-column: 5 / 6; grid-row: 4 / 5;"></div>
+    </div>
+  </div> -->
+
+  <div class="wrapper">
+    <img src="assets/img/bateria_instrumento.png" alt="Batería">
+    <div class="container-bateria">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div6"></div>
+      <div class="div7"></div>
+      <div class="div8"></div>
+      <div class="div9"></div>
+      <div class="div10"></div>
+      <div class="div11"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div12"></div>
+      <div class="div13"></div>
+      <div class="div14"></div>
+      <div class="div15"></div>
+      <div class="div16"></div>
+      <div class="div17"></div>
+      <div class="div18"></div>
+      <div class="div19"></div>
+    </div>
+  </div>
+
     <div class="drum-container">
       <button class="drum-pad" data-sound="kick">Kick (A)</button>
       <button class="drum-pad" data-sound="snare">Snare (S)</button>
@@ -38,20 +90,33 @@
       <button class="drum-pad" data-sound="tom2">Tom 2 (H)</button>
     </div>
   </main>
-  <section id="instrumentos">
-    <h2 class="title playfair-display-400">Otros instrumentos</h2>
+  <section id="cambiar-instrumentos">
+    <h2 class="title playfair-display-400">Selecciona el instrumento</h2>
     <div class="instr-container">
-      <div class="instr instr-piano">
-        <a href="/piano.html">
-          <img src="/assets/img/piano.png" alt="" srcset="">
-        </a>
-      </div>
-      <div class="instr instr-bateria">
-        <a href="/marimba.html">
-          <img src="/assets/img/marimba.png" alt="" srcset="">
-        </a>
+        <div class="instr instr-piano">
+            <a href="/piano.html">
+                <img src="/assets/img/piano.png" alt="" srcset="">
+            </a>
+        </div>
+        <div class="instr instr-marimba">
+            <a href="/marimba.html">
+                <img src="/assets/img/marimba.png" alt="" srcset="">
+            </a>
+        </div>
+    </div>
+</section>
   
   <script src="scriptbateria.js"></script>
+  <script>
+    const hitboxes = document.querySelectorAll('.hitbox');
+    hitboxes.forEach((hitbox) => {
+      hitbox.addEventListener('click', () => {
+        const drum = hitbox.getAttribute('data-drum');
+        alert(`Tocaste: ${drum}`);
+        // Aquí puedes reproducir sonidos según el valor de data-drum
+      });
+    });
+  </script>
 </body>
 
 </html>

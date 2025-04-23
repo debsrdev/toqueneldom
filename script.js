@@ -12,6 +12,15 @@ document.querySelectorAll(".nav a").forEach((link) => {
     document.querySelector(".lineas-menu").classList.remove("change");
   });
 });
+// funcion para scroll up btn
+const btn = document.querySelector(".scroll-up-btn");
+
+btn.addEventListener("click", () => {
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 // documentación de la librería https://tonejs.github.io/
 // ejemplo: https://tonejs.github.io/examples/sampler
 // iniciamos Tone.js

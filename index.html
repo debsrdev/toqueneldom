@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toquen el DOM</title>
+    <title>Let it beat</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d441583100.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,8 +19,7 @@
                 <div class="linea1"></div>
                 <div class="linea2"></div>
                 <div class="linea3"></div>
-            </div>       
-               
+            </div>
             <nav id="menu" class="nav">
                 <a class="menu-active" href="#inicio">Inicio</a>
                 <a href="#instrumentos">Practica tu mismo</a>
@@ -31,6 +31,9 @@
             </nav>
         </div>
     </header>
+    <button class="scroll-up-btn">
+      <i class="arrow-up"></i>
+    </button>
     <section class="hero-section">
       <iframe
         src="https://www.youtube.com/embed/TV3bcU3zNvE?autoplay=1&mute=1&loop=1&playlist=TV3bcU3zNvE&vq=hd720"
@@ -55,7 +58,7 @@
               <li>🧠 Armonía, improvisación y composición</li>
             </ul>
             <p>Explora, siente y toca la música con nosotros. Tu viaje musical empieza hoy.</p>
-            <p>¡Bienvenido a la familia de <strong>Toquen el DOM</strong>!</p>
+            <p>¡Bienvenido a la familia de <strong>Let it beat</strong>!</p>
           </div>
         </section>
         <section id="instrumentos">
@@ -81,10 +84,9 @@
       <section id="aboutus" class="aboutus-section">
         <div class="container">
           <h2 class="title playfair-display-400">La escuela</h2>
-      
           <div class="card">
             <p>
-              En <strong>Toquen el DOM</strong> creemos que la música es para todos. Fundada por músicos y docentes
+              En <strong>Let it beat</strong> creemos que la música es para todos. Fundada por músicos y docentes
               apasionados,
               nuestra escuela ofrece un espacio inclusivo y moderno donde puedes explorar, aprender y crecer musicalmente,
               sin importar tu nivel.
@@ -119,10 +121,8 @@
       
         </div>
       </section>
-
-        <section id="profesores" class="profesores-section">
-          <h2 class="title playfair-display-400">Profesores</h2>
-        <section id="profesores">
+      <section id="profesores" class="profesores-section">
+        <h2 class="title playfair-display-400">Profesores</h2>
           <div class="container">
             <div class="profes-container">
               <div class="card">
@@ -131,21 +131,18 @@
                 <p class="title">Profesora de Piano</p>
                 <p>Especialista en piano clásico y moderno. Más de 10 años de experiencia enseñando.</p>
               </div>
-        
               <div class="card">
                 <img src="assets/img/143511.jpg" alt="Xabi López - Profesor de Guitarra" class="card-img">
                 <h3>Xabi López</h3>
                 <p class="title">Profesor de Guitarra</p>
                 <p>Guitarrista, compositor y experto en armonía moderna.</p>
               </div>
-        
               <div class="card">
                 <img src="assets/img/2148006500.jpg" alt="Atenea Mercado - Profesora de Violín" class="card-img">
                 <h3>Atenea Mercado</h3>
                 <p class="title">Profesora de Violín</p>
                 <p>Nació en nuestra escuela y comparte su pasión desde hace 4 años.</p>
               </div>
-        
               <div class="card">
                 <img src="assets/img/2149215533.jpg" alt="Julien Montecristo - Profesor de Canto" class="card-img">
                 <h3>Julien Montecristo</h3>
@@ -158,100 +155,99 @@
 
         <section id="galeria"> 
           <div class="responsive">
-          <div class="scroll-container">
-                  
+            <div class="scroll-container">
                 <h2 class="title playfair-display-400">Galería</h2><br>
                   <div class="scroll-content">
-              <!-- Imagen -->
-              <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="https://media.istockphoto.com/id/912073292/photo/happy-elderly-man-at-home-using-digital-tablet.jpg?s=612x612&w=0&k=20&c=pDznPpa0QWfsPx18r_L9bBZCwdyrmdX97O3kTAFPv7E=">
-                    <img src="https://media.istockphoto.com/id/912073292/photo/happy-elderly-man-at-home-using-digital-tablet.jpg?s=612x612&w=0&k=20&c=pDznPpa0QWfsPx18r_L9bBZCwdyrmdX97O3kTAFPv7E=" alt="Man with tablet">
-                  </a>
-                  <div class="desc">Nuestro alumno de batería<br> Alvaro Santos</div>
-                </div>
-              </div>
-              <!-- Video Youtube -->
-              <div class="responsive">
-                <div class="gallery">
-                  <div class="video-container">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/5DF7oGuRZTU?si=jppWG68ftwTdSYFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- Imagen -->
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="https://media.istockphoto.com/id/912073292/photo/happy-elderly-man-at-home-using-digital-tablet.jpg?s=612x612&w=0&k=20&c=pDznPpa0QWfsPx18r_L9bBZCwdyrmdX97O3kTAFPv7E=">
+                          <img src="https://media.istockphoto.com/id/912073292/photo/happy-elderly-man-at-home-using-digital-tablet.jpg?s=612x612&w=0&k=20&c=pDznPpa0QWfsPx18r_L9bBZCwdyrmdX97O3kTAFPv7E=" alt="Man with tablet">
+                        </a>
+                        <div class="desc">Nuestro alumno de batería<br> Alvaro Santos</div>
+                      </div>
+                    </div>
+                    <!-- Video Youtube -->
+                    <div class="responsive">
+                      <div class="gallery">
+                        <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/5DF7oGuRZTU?si=jppWG68ftwTdSYFH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="desc">Conozca La Escuela <br> Let It Beat</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="https://img.freepik.com/fotos-gratis/sala-de-aula-virtual-e-espaco-de-estudo_23-2149178644.jpg?t=st=1745270038~exp=1745273638~hmac=74ae844cb9a827b43b930ec63fde7601485ca52757e6b673861b35427920f8a3&w=1380">
+                          <img src="https://img.freepik.com/fotos-gratis/sala-de-aula-virtual-e-espaco-de-estudo_23-2149178644.jpg?t=st=1745270038~exp=1745273638~hmac=74ae844cb9a827b43b930ec63fde7601485ca52757e6b673861b35427920f8a3&w=1380" alt="Alumna marimba">
+                        </a>
+                        <div class="desc">Nuestra alumna de Marimba<br> Carla Díaz</div>
+                      </div>
+                    </div>        
+                    <div class="responsive">
+                      <div class="gallery">
+                        <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/evPsaqytGuw?si=ZhSiE_sOSKLqNB01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="desc">Let It Beat:<br>Deja que la musica fluya!</div>
+                      </div>
+                    </div>
+                    <div class="responsive">
+                      <div class="gallery">
+                        <a target="_blank" href="https://img.freepik.com/fotos-gratis/grupo-multirracial-de-cinco-amigos-tomando-um-cafe-juntos_1139-1023.jpg?semt=ais_hybrid&w=740">
+                          <img src="https://img.freepik.com/fotos-gratis/grupo-multirracial-de-cinco-amigos-tomando-um-cafe-juntos_1139-1023.jpg?semt=ais_hybrid&w=740" alt="Primero Encuentro Valencia">
+                        </a>
+                        <div class="desc">Primero encuentro <br>Let It Beat en Valencia</div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="desc">Conozca La Escuela <br> Let It Beat</div>
-                </div>
-              </div>
-              <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="https://img.freepik.com/fotos-gratis/sala-de-aula-virtual-e-espaco-de-estudo_23-2149178644.jpg?t=st=1745270038~exp=1745273638~hmac=74ae844cb9a827b43b930ec63fde7601485ca52757e6b673861b35427920f8a3&w=1380">
-                    <img src="https://img.freepik.com/fotos-gratis/sala-de-aula-virtual-e-espaco-de-estudo_23-2149178644.jpg?t=st=1745270038~exp=1745273638~hmac=74ae844cb9a827b43b930ec63fde7601485ca52757e6b673861b35427920f8a3&w=1380" alt="Alumna marimba">
-                  </a>
-                  <div class="desc">Nuestra alumna de Marimba<br> Carla Díaz</div>
-                </div>
-              </div>        
-              <div class="responsive">
-                <div class="gallery">
-                  <div class="video-container">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/evPsaqytGuw?si=ZhSiE_sOSKLqNB01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </iframe>
-                  </div>
-                  <div class="desc">Let It Beat:<br>Deja que la musica fluya!</div>
-                </div>
-              </div>
-            <div class="responsive">
-                <div class="gallery">
-                  <a target="_blank" href="https://img.freepik.com/fotos-gratis/grupo-multirracial-de-cinco-amigos-tomando-um-cafe-juntos_1139-1023.jpg?semt=ais_hybrid&w=740">
-                    <img src="https://img.freepik.com/fotos-gratis/grupo-multirracial-de-cinco-amigos-tomando-um-cafe-juntos_1139-1023.jpg?semt=ais_hybrid&w=740" alt="Primero Encuentro Valencia">
-                  </a>
-                  <div class="desc">Primero encuentro <br>Let It Beat en Valencia</div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
         </section>
         <section id="faq" class="faq-container">
-          <div>
-            <h2 class="title playfair-display-400">Preguntas Frecuentes</h2>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Qué tipos de instrumentos enseña la escuela?</summary>
-                    <p>Ofrecemos clases de piano,marimba,bateria,entre otros instrumentos y por supuesto clases de canto para todos los niveles. También contamos con talleres especiales para iniciarse 
-                    en la música y exploración de diferentes estilos musicales.</p>
-                </details>
+            <div>
+                <h2 class="title playfair-display-400">Preguntas Frecuentes</h2>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Qué tipos de instrumentos enseña la escuela?</summary>
+                        <p>Ofrecemos clases de piano, marimba y bateria. También contamos con talleres especiales para iniciarse 
+                        en la música y exploración de diferentes estilos musicales.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Necesito experiencia previa para inscribirme?</summary>
+                        <p>¡No, para nada! Tenemos clases para todos los niveles, desde principiantes hasta avanzados.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Qué horarios están disponibles?</summary>
+                        <p>Nuestros horarios son flexibles y diseñados para adaptarse a tu rutina.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Qué metodo de pago aceptan?</summary>
+                        <p>Aceptamos pagos con tarjeta de crédito, transferencia bancaria y PayPal. También ofrecemos planes de pago para cursos más largos.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Ofrecen clases individuales o grupales?</summary>
+                        <p>Ambas modalidades están disponibles. Puedes optar por clases personalizadas individuales o participar en clases grupales para aprender 
+                        junto con otros estudiantes.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">¿Cómo puedo inscribirme?</summary>
+                        <p>Puedes inscribirte llamandonos o visitándonos en nuestra sede. Proximamente tendremos un formulario en línea para que puedas inscribirte
+                        directamente en nuestra página web y reserves tu primera clase</p>
+                    </details>
+                </div>
             </div>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Necesito experiencia previa para inscribirme?</summary>
-                    <p>¡No, para nada! Tenemos clases para todos los niveles, desde principiantes hasta avanzados.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Qué horarios están disponibles?</summary>
-                    <p>Nuestros horarios son flexibles y diseñados para adaptarse a tu rutina.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Qué metodo de pago aceptan?</summary>
-                    <p>Aceptamos pagos con tarjeta de crédito, transferencia bancaria y PayPal. También ofrecemos planes de pago para cursos más largos.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Ofrecen clases individuales o grupales?</summary>
-                    <p>Ambas modalidades están disponibles. Puedes optar por clases personalizadas individuales o participar en clases grupales para aprender 
-                    junto con otros estudiantes.</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary class="faq-question">¿Cómo puedo inscribirme?</summary>
-                    <p>Puedes inscribirte llamandonos o visitándonos en nuestra sede. Proximamente tendremos un formulario en línea para que puedas inscribirte
-                    directamente en nuestra página web y reserves tu primera clase</p>
-                </details>
-            </div>
-          </div>
         </section>
         <section id="contacto">
             <h2 class="title playfair-display-400">Contacto</h2>
